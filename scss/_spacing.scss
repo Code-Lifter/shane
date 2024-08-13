@@ -1,0 +1,22 @@
+@use "./colours" as *;
+@use "./base" as *;
+@use "./blockquote" as *;
+@use "./font" as *;
+@use "./buttons" as *;
+@use "./code" as *;
+@use "./devider" as *;
+@use "./form" as *;
+@use "./grid" as *;
+@use "./images" as *;
+@use "./lists" as *;
+
+/* google maps */
+iframe {
+    border-radius: 0.5rem;
+    height: 15rem;
+    width: 100%;
+  }
+
+  section {
+    border: 10rem;
+  }

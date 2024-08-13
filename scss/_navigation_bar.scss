@@ -1,0 +1,139 @@
+@use "./colours" as *;
+@use "./font" as *;
+
+/* Navigation */
+
+nav {
+  position: fixed;
+  top: 0;
+  /* Fix the nav at the top of the viewport */
+  left: 50%;
+  /* Start positioning from the centre */
+  transform: translateX(-50%);
+  /* Shift back by half of its own width */
+  height: 3rem;
+  background-color: $primary-color;
+  display: flex;
+  justify-content: center;
+  /* Centre content horizontally within the nav */
+  align-items: center;
+  z-index: 2;
+  width: 100%;
+  /* Ensure the nav spans the full width */
+  max-width: 100%;
+  /* Optional: Limit the maximum width */
+}
+
+.links-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  /* Centre links within the container */
+  align-items: center;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  background-color: $secondary-color;
+  border-radius: 0.5rem;
+}
+
+nav .home-link {
+  margin-right: auto;
+}
+
+nav svg {
+  fill: white;
+}
+
+#sidebar-active {
+  display: none;
+}
+
+.open-sidebar-button,
+.close-sidebar-button {
+  display: none;
+}
+
+.side-nav {
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-right: 1px solid #dee2e6;
+}
+
+.content {
+  margin-left: 25%;
+}
+
+@media(max-width: 750px) {
+  .links-container {
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: fixed;
+    top: 475%;
+    /* Adjust this to start centring */
+    right: -100%;
+    width: 100%;
+
+    background-color: black;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+    transition: 0.2s ease-out;
+
+    transform: translateY(-50%);
+    /* Centre vertically */
+  }
+
+  nav a {
+    box-sizing: border-box;
+    height: 10rem;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: flex-start;
+    background-color: $primary-color;
+  }
+
+  .open-sidebar-button,
+  .close-sidebar-button {
+    padding: 20px;
+    display: block;
+  }
+
+  #sidebar-active:checked~.links-container {
+    right: 0;
+  }
+
+  #sidebar-active:checked~#overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  }
+}
+
+
+@media (max-width: 767.98px) {
+  .side-nav {
+    position: relative;
+    height: auto;
+    border-right: none;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+}

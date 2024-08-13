@@ -1,0 +1,31 @@
+@use "./colours" as *;
+@use "./base" as *;
+@use "./blockquote" as *;
+@use "./font" as *;
+
+#contact-us button {
+    background-color: $accent-color;
+    border: none; /* No border */
+    color: white; /* White text */
+    padding: 1rem 40%; /* Padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Inline element */
+    font-size: 1rem; /* Font size */
+    margin: 0.5rem 0.5rem; /* Margin */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background-color transition */
+}
+
+/* Change background color on hover */
+.button:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+/* Button when clicked (active state) */
+.button:active {
+    background-color: #3e8e41; /* Even darker green */
+    box-shadow: 0 5px #666; /* Shadow effect */
+    transform: translateY(4px); /* Move button down */
+}

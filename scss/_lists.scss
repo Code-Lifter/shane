@@ -1,0 +1,22 @@
+@use "./colours" as *;
+@use "./base" as *;
+@use "./blockquote" as *;
+@use "./font" as *;
+@use "./buttons" as *;
+@use "./code" as *;
+@use "./devider" as *;
+@use "./form" as *;
+@use "./grid" as *;
+@use "./images" as *;
+
+/* Ensure ordered list items are numbered */
+ol {
+    list-style-type: decimal;
+    /* Default number style */
+  }
+  
+  /* Optional: Custom styles for the list items */
+  ol li {
+    margin-bottom: 0.3em;
+    /* Adjust spacing between list items */
+  }
