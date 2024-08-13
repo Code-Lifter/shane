@@ -88,6 +88,7 @@ body {
   padding-bottom: 5rem;
 }
 
+/* parallax */
 .parallax {
   /* The image used */
   background-image: url("../media/images/shanes-banner.jpg");
