@@ -6,3 +6,35 @@
 @use "./code" as *;
 @use "./devider" as *;
 
+/* Mobile */
+@media screen and (max-width: 320px) {
+    .website {width: 320px;}
+  }
+  
+  /* Small devices */
+  @media screen and (max-width: 480px) {
+    .website {width: 480px;}
+    #message {
+        height: 20rem;
+    }
+  }
+  
+  /* Tablets and modern smartphones */
+  @media screen and (max-width: 768px) {
+    .website {width: 768px;}
+  }
+  
+  /* Landscape-oriented tablets and smaller laptops */
+  @media screen and (max-width: 1024px) {
+    .website {width: 1024px;}
+  }
+  
+  /* Larger laptops and desktops */
+  @media screen and (max-width: 1200px) {
+    .website {width: 1200px;}
+  }
+  
+  /* High-resolution monitors and larger desktops */
+  @media screen and (max-width: 1440px) {
+    .website {width: 1440px;}
+  }
