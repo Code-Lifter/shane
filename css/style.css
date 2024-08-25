@@ -246,7 +246,6 @@ nav {
   width: 100%;
   /* Ensure the nav spans the full width */
   max-width: 100%;
-  /* Optional: Limit the maximum width */
 }
 
 .links-container {
@@ -259,7 +258,7 @@ nav {
 
 nav a {
   height: 100%;
-  padding: 0 20px;
+  padding: 0 2rem;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -286,6 +285,16 @@ nav svg {
 .open-sidebar-button,
 .close-sidebar-button {
   display: none;
+}
+
+.close-sidebar-button {
+  background-color: #798471;
+  width: 100%; /* Make the button 100% width */
+  text-align: center; /* Centre the content inside the button */
+}
+
+.close-sidebar-button svg {
+  margin: 0 auto; /* Centre the SVG inside the button */
 }
 
 .side-nav {
@@ -340,6 +349,10 @@ nav svg {
     top: 0;
     left: 0;
     z-index: 9;
+  }
+  nav a:hover {
+    background-color: #9BAB9B;
+    border-radius: 0rem;
   }
 }
 @media (max-width: 767.98px) {
