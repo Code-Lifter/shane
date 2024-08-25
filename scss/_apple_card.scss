@@ -16,3 +16,65 @@
 #banner .logo svg {
   padding-bottom: 5rem;
 }
+
+
+
+/* BBBB */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card-custom {
+  flex: 1 1 48%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-custom h2 {
+  color: #4a90e2;
+  margin-top: 0;
+}
+
+.card-custom blockquote {
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #4a90e2;
+  margin: 10px 0;
+  padding-left: 15px;
+}
+
+.card-custom .ratings {
+  margin-top: auto;
+}
+
+.card-custom .ratings p {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+strong {
+  color: #333;
+}
+
+.container {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .card-custom {
+      flex: 1 1 100%;
+  }
+}

@@ -32,11 +32,15 @@
 
 /* instagram-button */
 
-.instagram-button {
+.container .instagram-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5rem; /* Adjust based on your needs */
+    padding-bottom: 2.5rem; /* Adjust based on your needs */
+}
+
+.container .title-instagram {
+    padding-top: 2.5rem;
 }
 
 .instagram {

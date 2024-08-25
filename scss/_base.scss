@@ -21,6 +21,26 @@ main {
     background-size: cover;
   }
 
+  /* Default for large screens */
+.parallax {
+  background-attachment: fixed;
+}
+
+/* Medium screens: disable parallax on smaller screens */
+@media (max-width: 1024px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+/* Small screens: further adjust the background for mobile */
+@media (max-width: 768px) {
+  .parallax {
+    background-attachment: scroll;
+    background-position: center top;
+  }
+}
+
 /* background colours */
 #welcome, #projects, #reviews {
     background-color: rgba($accent-color, 0.2); /* Light blue */

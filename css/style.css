@@ -21,6 +21,24 @@ body {
   background-size: cover;
 }
 
+/* Default for large screens */
+.parallax {
+  background-attachment: fixed;
+}
+
+/* Medium screens: disable parallax on smaller screens */
+@media (max-width: 1024px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+/* Small screens: further adjust the background for mobile */
+@media (max-width: 768px) {
+  .parallax {
+    background-attachment: scroll;
+    background-position: center top;
+  }
+}
 /* background colours */
 #welcome, #projects, #reviews {
   background-color: rgba(121, 132, 113, 0.2); /* Light blue */
@@ -58,11 +76,15 @@ body {
 }
 
 /* instagram-button */
-.instagram-button {
+.container .instagram-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 5rem; /* Adjust based on your needs */
+  padding-bottom: 2.5rem; /* Adjust based on your needs */
+}
+
+.container .title-instagram {
+  padding-top: 2.5rem;
 }
 
 .instagram {
@@ -147,6 +169,64 @@ section {
   padding-bottom: 5rem;
 }
 
+/* BBBB */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card-custom {
+  flex: 1 1 48%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-custom h2 {
+  color: #4a90e2;
+  margin-top: 0;
+}
+
+.card-custom blockquote {
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #4a90e2;
+  margin: 10px 0;
+  padding-left: 15px;
+}
+
+.card-custom .ratings {
+  margin-top: auto;
+}
+
+.card-custom .ratings p {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+strong {
+  color: #333;
+}
+
+.container {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .card-custom {
+    flex: 1 1 100%;
+  }
+}
 /* Navigation */
 nav {
   position: fixed;
