@@ -6,6 +6,36 @@
 @use "./code" as *;
 @use "./devider" as *;
 
+/* contact us */
+#contact-us button {
+  background-color: $accent-color;
+  border: none; /* No border */
+  color: white; /* White text */
+  padding: 1rem 40%; /* Padding */
+  text-align: center; /* Center text */
+  text-decoration: none; /* No underline */
+  display: inline-block; /* Inline element */
+  font-size: 1rem; /* Font size */
+  margin: 0.5rem 0.5rem; /* Margin */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 8px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth background-color transition */
+}
+
+.button:hover {
+  background-color: #45a049; /* Darker green */
+}
+
+.button:active {
+  background-color: #3e8e41; /* Even darker green */
+  box-shadow: 0 0.5rem #666; /* Shadow effect */
+  transform: translateY(0.4rem); /* Move button down */
+}
+
+#message {
+  height: 10rem;
+}
+
 /* Mobile */
 @media screen and (max-width: 320px) {
     .website {width: 320px;}
@@ -17,6 +47,7 @@
     #message {
         height: 20rem;
     }
+    
   }
   
   /* Tablets and modern smartphones */

@@ -15,6 +15,7 @@
 
 #banner .logo svg {
   padding-bottom: 5rem;
+  fill: rgb(255, 0, 0);
 }
 
 
@@ -77,4 +78,35 @@ strong {
   .card-custom {
       flex: 1 1 100%;
   }
+}
+
+/* ksajdhfsakjdfhlsakjfh */
+
+.specialisation-section {
+  background-color: #f8f9fa; /* Light background for contrast */
+  padding: 1.25rem; /* 20px */
+  border-radius: 0.625rem; /* 10px */
+  text-align: center;
+  margin: 1.25rem auto; /* 20px */
+  max-width: 50rem; /* 800px */
+}
+
+.specialisation-heading {
+  font-size: 2em; /* Equivalent to 2rem if base is 16px */
+  color: #333;
+  margin-bottom: 0.625rem; /* 10px */
+}
+
+.specialisation-description {
+  font-size: 1.2em; /* Equivalent to 1.2rem if base is 16px */
+  color: #666;
+}
+
+.specialisation-description strong {
+  color: $accent-color; /* Highlight the key terms */
+  font-weight: bold;
+}
+
+.carousel-indicators {
+  visibility: hidden;
 }

@@ -48,6 +48,32 @@ body {
   background-color: rgba(121, 132, 113, 0.1); /* Lavender */
 }
 
+/* instagram-button */
+.container .instagram-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2.5rem; /* Adjust based on your needs */
+}
+
+.instagram-button a {
+  background-color: #ac2bac;
+}
+
+.container .title-instagram {
+  padding-top: 2.5rem;
+}
+
+.instagram {
+  fill: white;
+}
+
+.instagram-button a:hover {
+  background-color: #8a2bac; /* Change to Instagram's brand colour on hover */
+  transform: scale(1.1); /* Optional: Slightly enlarge the button on hover */
+}
+
+/* contact us */
 #contact-us button {
   background-color: #798471;
   border: none; /* No border */
@@ -63,32 +89,18 @@ body {
   transition: background-color 0.3s ease; /* Smooth background-color transition */
 }
 
-/* Change background color on hover */
 .button:hover {
   background-color: #45a049; /* Darker green */
 }
 
-/* Button when clicked (active state) */
 .button:active {
   background-color: #3e8e41; /* Even darker green */
-  box-shadow: 0 5px #666; /* Shadow effect */
-  transform: translateY(4px); /* Move button down */
+  box-shadow: 0 0.5rem #666; /* Shadow effect */
+  transform: translateY(0.4rem); /* Move button down */
 }
 
-/* instagram-button */
-.container .instagram-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 2.5rem; /* Adjust based on your needs */
-}
-
-.container .title-instagram {
-  padding-top: 2.5rem;
-}
-
-.instagram {
-  fill: white;
+#message {
+  height: 10rem;
 }
 
 /* Mobile */
@@ -145,7 +157,7 @@ ol li {
 /* google maps */
 iframe {
   border-radius: 0.5rem;
-  height: 15rem;
+  height: 20rem;
   width: 100%;
 }
 
@@ -167,6 +179,7 @@ section {
 
 #banner .logo svg {
   padding-bottom: 5rem;
+  fill: rgb(255, 0, 0);
 }
 
 /* BBBB */
@@ -227,6 +240,36 @@ strong {
     flex: 1 1 100%;
   }
 }
+/* ksajdhfsakjdfhlsakjfh */
+.specialisation-section {
+  background-color: #f8f9fa; /* Light background for contrast */
+  padding: 1.25rem; /* 20px */
+  border-radius: 0.625rem; /* 10px */
+  text-align: center;
+  margin: 1.25rem auto; /* 20px */
+  max-width: 50rem; /* 800px */
+}
+
+.specialisation-heading {
+  font-size: 2em; /* Equivalent to 2rem if base is 16px */
+  color: #333;
+  margin-bottom: 0.625rem; /* 10px */
+}
+
+.specialisation-description {
+  font-size: 1.2em; /* Equivalent to 1.2rem if base is 16px */
+  color: #666;
+}
+
+.specialisation-description strong {
+  color: #798471; /* Highlight the key terms */
+  font-weight: bold;
+}
+
+.carousel-indicators {
+  visibility: hidden;
+}
+
 /* Navigation */
 nav {
   position: fixed;
