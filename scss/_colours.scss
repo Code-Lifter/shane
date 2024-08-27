@@ -1,10 +1,11 @@
 
 // Define your color variables
-$primary-color: #9EA598;
-$secondary-color: #9BAB9B;
-$accent-color: #798471;
+$primary-color: #7D8673;  // Darker to contrast better with light backgrounds
+$secondary-color: #667B66; // Adjusted for better contrast with both black and white
+$accent-color: #5C6654;   // Darkened for stronger contrast
+$text-color: #4D4B3E;     // Darkened for better readability on light backgrounds
+$background-color: #f7f7f7; // Slightly lightened to keep it distinct from text
+$color-black: #000000;     // Pure black for the strongest contrast
+$color-white: #ffffff;     // Pure white for the strongest contrast
 
-$text-color: #AEAA95;
-$background-color: #f0f0f0;
-$color-black: black;
-
+$opposite-color: #7656a3; // Complementary to the primary colour

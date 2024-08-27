@@ -18,9 +18,11 @@
   fill: rgb(255, 0, 0);
 }
 
+#welcome strong {
+  color: $opposite-color;
+}
 
-
-/* BBBB */
+/* cards */
 
 .card-container {
   display: flex;
@@ -43,14 +45,14 @@
 }
 
 .card-custom h2 {
-  color: #4a90e2;
+  color: $accent-color;
   margin-top: 0;
 }
 
 .card-custom blockquote {
   font-style: italic;
   color: #555;
-  border-left: 4px solid #4a90e2;
+  border-left: 4px solid $accent-color;
   margin: 10px 0;
   padding-left: 15px;
 }
@@ -106,9 +108,3 @@ strong {
   color: $accent-color; /* Highlight the key terms */
   font-weight: bold;
 }
-
-
-/* carasel */
-
-
-
