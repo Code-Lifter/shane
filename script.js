@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
                       top: scrollPosition,
                       behavior: 'smooth'
                   });
-              }, 10); // Delay to allow content expansion
+              }, 50); // Delay to allow content expansion
           }
       });
   });
