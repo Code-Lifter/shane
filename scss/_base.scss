@@ -1,13 +1,15 @@
 @use "./colours" as *;
 @use "./font" as *;
 @use "./blockquote" as *;
-  
+
 main {
   background-color: white;
+  max-width: 2560px; /* Maximum width */
+  margin: 0 auto; /* Centre horizontally */
 }
 
-  body {
-	z-index: -1;
+body {
+  z-index: -1;
   }
 
   .parallax {
