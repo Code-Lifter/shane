@@ -1,1 +1,1 @@
-https://agonizingfool.github.io/shane/
+https://code-lifter.github.io/shane/
